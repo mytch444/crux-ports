@@ -1,0 +1,20 @@
+# Description: Simple input box that takes options in stdin and prints out what is typed/selected. Comes with some example scripts.
+# URL: http://github.com/mytch444/selecttext
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: xorg-server xorg-libxft xorg-libxrender freetype fontconfig
+
+name=selecttext
+version=1.0
+release=1
+source=($name-$version.tar.xz)
+
+build() {
+	cd $name
+
+	make
+
+	install -m 0755 -D $SRC/$name/$name $PKG/usr/local/bin/$name
+	install -m 0755 -D $SRC/$name/selectwindow $PKG/usr/local/bin/selectwindow
+	install -m 0755 -D $SRC/$name/selectexec $PKG/usr/local/bin/selectexec
+}

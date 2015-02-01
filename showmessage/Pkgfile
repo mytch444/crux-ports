@@ -1,0 +1,19 @@
+# Description: Simple utility to show a message.
+# URL: http://github.com/mytch444/showmessage
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: xorg-server xorg-libxft xorg-libxrender freetype fontconfig
+
+name=showmessage
+version=1.0
+release=1
+source=($name-$version.tar.xz)
+
+build() {
+	cd $name
+
+	make
+
+	install -m 0755 -D $SRC/$name/$name $PKG/usr/local/bin/$name
+	install -m 0755 -D $SRC/$name/showtime $PKG/usr/local/bin/showtime
+}

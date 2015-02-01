@@ -1,0 +1,14 @@
+# Description: Convinient way of setting cpu governor.
+# URL: http://github.com/mytch444/scripts
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: cpufrequtils
+
+name=cpugov
+version=1.0.1
+release=1
+source=(https://raw.githubusercontent.com/mytch444/scripts/master/cpugov)
+
+build() {
+	install -m 0755 -D $SRC/$name $PKG/usr/bin/$name
+}

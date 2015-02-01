@@ -1,0 +1,19 @@
+# Description: Simple music player that uses mpv to play. 
+# URL: http://github.com/mytch444/mmusic
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: mpv ncurses
+
+name=mmusic
+version=1.0
+release=1
+source=($name-$version.tar.xz)
+
+build() {
+	cd $name
+
+	make
+
+	install -m 0755 -D $SRC/$name/mmusic $PKG/usr/local/bin/mmusic
+	install -m 0755 -D $SRC/$name/mmusicd $PKG/usr/local/bin/mmusicd
+}

@@ -1,0 +1,19 @@
+# Description: Scripts for checking battery status.
+# URL: http://github.com/mytch444
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: 
+
+name=battery
+version=1.0
+release=1
+source=($name-$version.tar.xz)
+
+build() {
+	cd $name
+
+	make
+
+	install -m 0755 -D $SRC/$name/$name $PKG/usr/bin/$name
+	install -m 0755 -D $SRC/$name/lowbattery $PKG/usr/bin/lowbattery
+}

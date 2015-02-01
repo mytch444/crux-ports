@@ -1,0 +1,18 @@
+# Description: A minimal floating window manager.
+# URL: http://github.com/mytch444/b3cnt-floating
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: xorg-server xorg-libxinerama
+
+name=b3cnt-floating
+version=1.0
+release=1
+source=($name-$version.tar.xz)
+
+build() {
+	cd $name
+
+	make
+
+	install -m 0755 -D $SRC/$name/$name $PKG/usr/local/bin/$name
+}
