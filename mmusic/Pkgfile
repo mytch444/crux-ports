@@ -7,13 +7,13 @@
 name=mmusic
 version=1.0
 release=1
-source=($name-$version.tar.xz)
+source=(https://github.com/mytch444/mmusic/archive/6df4aa179b6e3030029c96eb5412d5a17a5fb8fe.zip)
 
 build() {
-	cd $name
+	cd $name-6df4aa179b6e3030029c96eb5412d5a17a5fb8fe
 
 	make
 
-	install -m 0755 -D $SRC/$name/mmusic $PKG/usr/local/bin/mmusic
-	install -m 0755 -D $SRC/$name/mmusicd $PKG/usr/local/bin/mmusicd
+	install -m 0755 -D mmusic $PKG/usr/bin/mmusic
+	install -m 0755 -D mmusicd $PKG/usr/bin/mmusicd
 }

@@ -6,13 +6,13 @@
 
 name=b3cnt-floating
 version=1.0
-release=1
-source=($name-$version.tar.xz)
+release=2
+source=(https://github.com/mytch444/b3cnt-floating/archive/526ca5f4abe5b601ecb6ed138a5d0880da0a070b.zip)
 
 build() {
-	cd $name
+	cd $name-526ca5f4abe5b601ecb6ed138a5d0880da0a070b
 
 	make
 
-	install -m 0755 -D $SRC/$name/$name $PKG/usr/local/bin/$name
+	install -m 0755 -D $name $PKG/usr/bin/$name
 }

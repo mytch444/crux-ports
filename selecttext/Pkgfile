@@ -6,15 +6,15 @@
 
 name=selecttext
 version=1.0
-release=1
-source=($name-$version.tar.xz)
+release=2
+source=(https://github.com/mytch444/selecttext/archive/300fe8fc44a9a0776b645a5e8aaacc2e0ea6e0f1.zip)
 
 build() {
-	cd $name
+	cd $name-300fe8fc44a9a0776b645a5e8aaacc2e0ea6e0f1
 
 	make
 
-	install -m 0755 -D $SRC/$name/$name $PKG/usr/local/bin/$name
-	install -m 0755 -D $SRC/$name/selectwindow $PKG/usr/local/bin/selectwindow
-	install -m 0755 -D $SRC/$name/selectexec $PKG/usr/local/bin/selectexec
+	install -m 0755 -D $name $PKG/usr/bin/$name
+	install -m 0755 -D selectwindow $PKG/usr/bin/selectwindow
+	install -m 0755 -D selectexec $PKG/usr/bin/selectexec
 }

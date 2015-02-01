@@ -2,12 +2,11 @@
 # URL: http://github.com/mytch444/scripts
 # Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
 # Packager: Mytchel Hammond, mytchel at openmailbox dot org
-# Depends on: findutils
 
 name=psearch
 version=1.0
-release=3
-source=(https://raw.githubusercontent.com/mytch444/scripts/master/psearch)
+release=4
+source=(https://raw.githubusercontent.com/mytch444/scripts/e64de44d9553f8c9b774b1bd703620f83e9464ee/psearch)
 
 build() {
 	install -m 0755 -D $SRC/$name $PKG/usr/bin/$name

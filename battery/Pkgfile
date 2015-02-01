@@ -7,13 +7,13 @@
 name=battery
 version=1.0
 release=1
-source=($name-$version.tar.xz)
+source=(https://github.com/mytch444/battery/archive/7b9f897c507440851674f42ef1e0936afbd93543.zip)
 
 build() {
-	cd $name
+	cd $name-7b9f897c507440851674f42ef1e0936afbd93543
 
 	make
 
-	install -m 0755 -D $SRC/$name/$name $PKG/usr/bin/$name
-	install -m 0755 -D $SRC/$name/lowbattery $PKG/usr/bin/lowbattery
+	install -m 0755 -D $name $PKG/usr/bin/$name
+	install -m 0755 -D lowbattery $PKG/usr/bin/lowbattery
 }
