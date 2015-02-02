@@ -5,9 +5,9 @@
 # Depends on: cpufrequtils
 
 name=cpugov
-version=1.0.1
+version=1.0.2
 release=2
-source=(https://raw.githubusercontent.com/mytch444/scripts/e64de44d9553f8c9b774b1bd703620f83e9464ee/cpugov)
+source=($name)
 
 build() {
 	install -m 0755 -D $SRC/$name $PKG/usr/bin/$name

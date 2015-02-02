@@ -1,0 +1,20 @@
+# Description: Open source 2D space shooter with simple graphics and explosions. 
+# URL: http://github.com/mytch444/37bec-amvios
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: jdk
+
+name=37bec-amvios
+version=1.0
+release=1
+source=(https://github.com/mytch444/37bec-amvios/archive/16bb182e2226fe8449e884536262b8504c1e1f67.zip
+	37bec-amvios)
+
+build() {
+	cd $name-16bb182e2226fe8449e884536262b8504c1e1f67
+
+	./makejar.sh
+
+	install -D 37bec-amvios.jar $PKG/usr/share/37bec-amvios/37bec-amvios.jar
+	install -D $SRC/37bec-amvios $PKG/usr/bin/37bec-amvios
+}

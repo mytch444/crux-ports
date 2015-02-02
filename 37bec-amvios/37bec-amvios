@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /usr/share/37bec-amvios
+java -jar 37bec-amvios.jar

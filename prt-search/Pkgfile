@@ -3,10 +3,10 @@
 # Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
 # Packager: Mytchel Hammond, mytchel at openmailbox dot org
 
-name=psearch
+name=prt-search
 version=1.0
-release=4
-source=(https://raw.githubusercontent.com/mytch444/scripts/e64de44d9553f8c9b774b1bd703620f83e9464ee/psearch)
+release=2
+source=($name)
 
 build() {
 	install -m 0755 -D $SRC/$name $PKG/usr/bin/$name
