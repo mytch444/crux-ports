@@ -5,12 +5,12 @@
 # Depends on: mpv ncurses
 
 name=mmusic
-version=1.0
+version=1.1
 release=1
-source=(https://github.com/mytch444/mmusic/archive/6df4aa179b6e3030029c96eb5412d5a17a5fb8fe.zip)
+source=(https://github.com/mytch444/mmusic/archive/167f83f667d10d6c4a1304e9fc63ff14beefc11a.zip)
 
 build() {
-	cd $name-6df4aa179b6e3030029c96eb5412d5a17a5fb8fe
+	cd $name-167f83f667d10d6c4a1304e9fc63ff14beefc11a
 
 	make
 
