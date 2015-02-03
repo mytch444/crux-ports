@@ -5,8 +5,8 @@ d:battery
 d:cpugov
 d:37bec-amvios
 d:prt-search
-f:6dd22019ecd0bbc829df2988e5ef8381:selecttext/Pkgfile
-f:e6c7711c1d32f92c93674414498587f9:selecttext/.md5sum
+f:a0474327cf495fff04be90166c44df66:selecttext/Pkgfile
+f:8b9f267cc487f2c4c86ce55faf7a6f37:selecttext/.md5sum
 f:21b6ce12beb2497c15266357c1876665:showmessage/Pkgfile
 f:c998bc9b22ceff0f259799165548c48d:showmessage/.md5sum
 f:7ea4fd9d4fae3412d52aee85bf1f931c:mmusic/.footprint
@@ -23,3 +23,4 @@ f:5d28eb7c0636ffa9da4ac8d094ffe0cb:37bec-amvios/.md5sum
 f:0036dd3af6279f44a4ef263a58e085b9:prt-search/prt-search
 f:218da85a8d2aff7c20e058af8f6bcfa0:prt-search/Pkgfile
 f:324c59baa901d0d9a06393e7378646d1:prt-search/.md5sum
+f:058a83048fe97fc57eb8e48646ed0d79:prt-search/prt-search-db

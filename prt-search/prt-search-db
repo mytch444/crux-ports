@@ -1,0 +1,19 @@
+#!/usr/bin/python2.7
+
+import pycurl
+import cStringIO
+from elementtree import ElementTree
+
+buf = cStringIO.StringIO()
+
+c = pycurl.Curl()
+c.setopt(c.URL, "https://crux.nu/portdb/?a=search&q=python")
+c.setopt(c.WRITEFUNCtION, buf.write)
+
+try:
+    c.perform()
+    print buf.getvalue()
+    buf.close()
+except pycurl.error, erro:
+    errno, errstr = error
+    print 'An error occurred: ', errstr

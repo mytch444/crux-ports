@@ -5,12 +5,12 @@
 # Depends on: xorg-server xorg-libxft xorg-libxrender freetype fontconfig
 
 name=selecttext
-version=1.0
-release=2
-source=(https://github.com/mytch444/selecttext/archive/300fe8fc44a9a0776b645a5e8aaacc2e0ea6e0f1.zip)
+version=1.0.1
+release=1
+source=(https://github.com/mytch444/selecttext/archive/ae5105d1eb5bd3614bc91ac61076521237de8734.zip)
 
 build() {
-	cd $name-300fe8fc44a9a0776b645a5e8aaacc2e0ea6e0f1
+	cd $name-ae5105d1eb5bd3614bc91ac61076521237de8734
 
 	make
 
