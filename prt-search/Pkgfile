@@ -1,13 +1,13 @@
-# Description: Convinient way to seach through /usr/ports for ports.
-# URL: http://github.com/mytch444/scripts
+# Description: Convinient way to seach through /usr/ports or crux.nu/portdb for ports.
 # Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
-# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: python
 
 name=prt-search
-version=1.0
-release=2
-source=($name)
+version=2
+release=1
+source=($name $name-db)
 
 build() {
 	install -m 0755 -D $SRC/$name $PKG/usr/bin/$name
+	install -m 0755 -D $SRC/$name-db $PKG/usr/bin/$name-db
 }

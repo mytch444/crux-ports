@@ -10,8 +10,8 @@ f:8b9f267cc487f2c4c86ce55faf7a6f37:selecttext/.md5sum
 f:21b6ce12beb2497c15266357c1876665:showmessage/Pkgfile
 f:c998bc9b22ceff0f259799165548c48d:showmessage/.md5sum
 f:7ea4fd9d4fae3412d52aee85bf1f931c:mmusic/.footprint
-f:4bca216cbbc9f7dc9933136200337b4f:mmusic/Pkgfile
-f:06e8944ec2829f128c019dd69b5ddf81:mmusic/.md5sum
+f:c06ecc5a8eb534a097c37e88e98ba7fa:mmusic/Pkgfile
+f:1fb41bbe2d327a94f881914a157622cf:mmusic/.md5sum
 f:c1ba6da3ee46dd319dc12eb55b993b9c:battery/.md5sum
 f:387261ae533fad470e6febfe9f2ad04a:battery/Pkgfile
 f:d50806ff4d5995c845a9cb45874dac38:cpugov/cpugov
@@ -21,6 +21,6 @@ f:0dd0a9bc14ba13e89d0eb90a81d468d9:37bec-amvios/37bec-amvios
 f:b193592fb1521bded4bd1082096f39d3:37bec-amvios/Pkgfile
 f:5d28eb7c0636ffa9da4ac8d094ffe0cb:37bec-amvios/.md5sum
 f:0036dd3af6279f44a4ef263a58e085b9:prt-search/prt-search
-f:218da85a8d2aff7c20e058af8f6bcfa0:prt-search/Pkgfile
-f:324c59baa901d0d9a06393e7378646d1:prt-search/.md5sum
-f:058a83048fe97fc57eb8e48646ed0d79:prt-search/prt-search-db
+f:3dfb33aeccaf4a75220ab8ef15b9aa4f:prt-search/prt-search-db
+f:1cf201eafa5b2de627e23992ed60bb0c:prt-search/Pkgfile
+f:59a6a40ef15214a6792c474a71eb1a3b:prt-search/.md5sum
