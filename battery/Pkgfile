@@ -1,19 +1,22 @@
-# Description: Scripts for checking battery status.
-# URL: http://github.com/mytch444
-# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Description: Scripts for checking and monitoring battery.
+# URL: http://github.com/mytch444/battery
 # Packager: Mytchel Hammond, mytchel at openmailbox dot org
 # Depends on: 
 
 name=battery
-version=1.0
+version=1.1
 release=1
-source=(https://github.com/mytch444/battery/archive/7b9f897c507440851674f42ef1e0936afbd93543.zip)
+source=(https://github.com/mytch444/battery/archive/18cb01d26ee9d51374e3159836cd4bcfeea190ce.zip)
 
 build() {
-	cd $name-7b9f897c507440851674f42ef1e0936afbd93543
+	cd $name-18cb01d26ee9d51374e3159836cd4bcfeea190ce
 
 	make
 
-	install -m 0755 -D $name $PKG/usr/bin/$name
-	install -m 0755 -D lowbattery $PKG/usr/bin/lowbattery
+	install -m 0755 -D battery $PKG/usr/bin/battery
+	install -m 0755 -D showbattery $PKG/usr/bin/showbattery
+	install -m 0755 -D lowbatteryd $PKG/usr/bin/lowbattery
+	install -m 0755 -D lowbatteryd-init $PKG/etc/rc.d/lowbatteryd
+	install -m 0775 -D lowbatteryd.conf $PKG/etc/lowbatteryd.conf
 }
+

@@ -1,0 +1,24 @@
+# Description: Bitcoin wallet
+# URL: http://github.com/bitcoin/bitcoin
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: qt4 boost protobuf
+
+name=bitcoin
+version=0.10.0
+release=1
+source=(https://github.com/bitcoin/bitcoin/archive/10a3ff07f59f8c02c92286e440e5832045a07596.zip)
+
+build() {
+	cd $name-10a3ff07f59f8c02c92286e440e5832045a07596
+
+	./autogen.sh
+	./configure \
+		--disable-dependency-tracking \
+		--disable-tests \
+		--prefix=/usr \
+		--with-incompatible-bdb \
+		--with-gui=qt4
+
+	make
+	make DESTDIR=$PKG install
+}
