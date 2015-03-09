@@ -4,19 +4,13 @@
 # Depends on: 
 
 name=battery
-version=1.1
-release=1
-source=(https://github.com/mytch444/battery/archive/18cb01d26ee9d51374e3159836cd4bcfeea190ce.zip)
+version=1.1.1
+release=4
+source=(https://github.com/mytch444/battery/archive/2cf45d29b6e798c7e9fe76e024ca5afdb9830212.zip)
 
 build() {
-	cd $name-18cb01d26ee9d51374e3159836cd4bcfeea190ce
+	cd $name-2cf45d29b6e798c7e9fe76e024ca5afdb9830212
 
-	make
-
-	install -m 0755 -D battery $PKG/usr/bin/battery
-	install -m 0755 -D showbattery $PKG/usr/bin/showbattery
-	install -m 0755 -D lowbatteryd $PKG/usr/bin/lowbattery
-	install -m 0755 -D lowbatteryd-init $PKG/etc/rc.d/lowbatteryd
-	install -m 0775 -D lowbatteryd.conf $PKG/etc/lowbatteryd.conf
+	make CONFDIR=$PKG/etc DESTDIR=$PKG/usr/bin install install-rc install-show
 }
 
