@@ -1,13 +1,11 @@
-# Description: Convinient way to seach through /usr/ports or crux.nu/portdb for ports.
+# Description: Similar to prt-get search but also prints the repo with the port.
 # Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
-# Depends on: python
 
 name=prt-search
-version=2
+version=3
 release=1
-source=($name $name-db)
+source=($name)
 
 build() {
 	install -m 0755 -D $SRC/$name $PKG/usr/bin/$name
-	install -m 0755 -D $SRC/$name-db $PKG/usr/bin/$name-db
 }
