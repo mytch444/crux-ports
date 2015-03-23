@@ -1,0 +1,16 @@
+# Description: Micro GNU/emacs
+# URL: http://homepage.boetes.org/software/mg/
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: ncurses libbsd
+
+name=mg
+version=20150316
+release=1
+source=(http://homepage.boetes.org/software/mg/mg-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make
+	make DESTDIR=$PKG install
+}

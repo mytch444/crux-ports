@@ -1,0 +1,2 @@
+You will need to rebuild mesa3d with 
+	--with-egl-platforms=x11,wayland,drm
