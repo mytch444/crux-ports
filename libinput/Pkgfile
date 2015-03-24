@@ -1,7 +1,7 @@
 # Description: evdev translater for wayland.
 # URL: http://www.freedesktop.org/wiki/Software/libinput/
 # Packager: Mytchel Hammond, mytchel at openmailbox dot org
-# Depends on: 
+# Depends on: libevdev
 
 name=libinput
 version=0.12.0

@@ -5,16 +5,12 @@
 # Depends on: xorg-server xorg-libxft xorg-libxrender freetype fontconfig
 
 name=selecttext
-version=1.0.3
+version=1.0.4
 release=1
-source=(https://github.com/mytch444/selecttext/archive/1fdfbf0ac2483f7577ba114e4690050435349e8e.zip)
+source=(https://github.com/mytch444/selecttext/archive/25dafafab99566824ed441bcb07390473af0187e.zip)
 
 build() {
-	cd $name-1fdfbf0ac2483f7577ba114e4690050435349e8e
+	cd $name-25dafafab99566824ed441bcb07390473af0187e
 
-	make
-
-	install -m 0755 -D $name $PKG/usr/bin/$name
-	install -m 0755 -D selectwindow $PKG/usr/bin/selectwindow
-	install -m 0755 -D selectexec $PKG/usr/bin/selectexec
+	make DESTDIR=$PKG install
 }

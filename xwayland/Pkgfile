@@ -1,0 +1,26 @@
+# Description: XWayland xserver
+# URL: http://xorg.freedesktop.org
+# Maintainer: CRUX Xorg Team, xorg-ports at crux dot nu
+# Depends on: libepoxy xorg-libxkbfile xorg-xtrans xorg-glproto xorg-xproto
+
+name=xwayland
+version=1.17.1
+release=1
+source=(http://xorg.freedesktop.org/releases/individual/xserver/xorg-server-$version.tar.bz2)
+
+build() {
+    cd xorg-server-$version
+
+    ./configure --prefix=/usr \
+				--disable-docs \
+				--disable-devel-docs \
+				--enable-xwayland \
+				--disable-xorg \
+				--disable-xvfb \
+				--disable-xnest \
+				--disable-xquartz \
+				--disable-xwin
+
+    make
+    make DESTDIR=$PKG install
+}

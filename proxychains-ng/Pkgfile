@@ -1,0 +1,19 @@
+# Description: DYNAMICALLY LINKED connections through socks and http proxies
+# URL: https://githb.com/rofl0r/proxychains-ng
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: 
+
+name=proxychains-ng
+version=1.0
+release=1
+source=(https://github.com/rofl0r/proxychains-ng/archive/d461f397b2ff691d9170f0f04721b4cef245eacd.zip)
+
+build() {
+	cd $name-d461f397b2ff691d9170f0f04721b4cef245eacd
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc
+	
+	make DESTDIR=$PKG install install-config
+}
