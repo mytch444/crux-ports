@@ -1,0 +1,17 @@
+# Description: Some usefull scripts for nenu.
+# URL: http://github.com/mytch444/nenu
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: nenu
+
+name=nenu-scripts
+version=1
+release=1
+source=(https://github.com/mytch444/$name/archive/2c9cfe9fc215fc8bd961abd4b738ef862cd6bf56.zip)
+
+build() {
+	cd nenu-2c9cfe9fc215fc8bd961abd4b738ef862cd6bf56
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install-scripts
+}

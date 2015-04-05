@@ -1,0 +1,6 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/nbatt
+-rwxr-xr-x	root/root	usr/bin/nexec
+-rwxr-xr-x	root/root	usr/bin/ntime
+-rwxr-xr-x	root/root	usr/bin/nwindow

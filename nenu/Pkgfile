@@ -1,0 +1,17 @@
+# Description: Dynamic menu for X11.
+# URL: http://github.com/mytch444/nenu
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: xorg-server xorg-libxft xorg-libxrender freetype fontconfig lsx lsw wmutils
+
+name=nenu
+version=1
+release=1
+source=(https://github.com/mytch444/$name/archive/2c9cfe9fc215fc8bd961abd4b738ef862cd6bf56.zip)
+
+build() {
+	cd $name-2c9cfe9fc215fc8bd961abd4b738ef862cd6bf56
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install-nenu install-man
+}
