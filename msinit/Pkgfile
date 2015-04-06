@@ -1,0 +1,17 @@
+# Description: Simple init that parralizes processes.
+# URL: http://github.com/mytch444/msinit
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: syslog
+
+name=msinit
+version=0.1
+release=3
+source=(https://github.com/mytch444/msinit/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make
+	make DESTDIR=$PKG install
+}
