@@ -6,11 +6,11 @@
 
 name=dpmstimeout
 version=2
-release=1
-source=(https://github.com/mytch444/dpmstimeout/archive/691f86fdd2bcd032f0e71cc215251bad1447da9a.zip)
+release=2
+source=(https://github.com/mytch444/dpmstimeout/archive/2e607302fb80c195553ecbf71e9044eaf41feedd.zip)
 
 build() {
-	cd $name-691f86fdd2bcd032f0e71cc215251bad1447da9a
+	cd $name-2e607302fb80c195553ecbf71e9044eaf41feedd
 
 	make
 	make DESTDIR=$PKG install
