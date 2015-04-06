@@ -4,12 +4,12 @@
 # Depends on: 
 
 name=battery-utils
-version=1.2.0
+version=1.2.1
 release=1
-source=(https://github.com/mytch444/battery/archive/52afe3a4d21a7f1739ac5d4c97c9ef75cbb365c3.zip)
+source=(https://github.com/mytch444/battery/archive/c9c9cca04b6f8026b9d53a54f47bbd35f7e724b6.zip)
 
 build() {
-	cd $name-52afe3a4d21a7f1739ac5d4c97c9ef75cbb365c3
+	cd $name-c9c9cca04b6f8026b9d53a54f47bbd35f7e724b6
 
 	make CONFDIR=/etc lowbatteryd.set
 	make DESTDIR=$PKG CONFDIR=/etc BINDIR=/usr/bin install
