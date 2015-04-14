@@ -1,0 +1,15 @@
+# Description: A library for making a simple Wayland compositor.
+# URL: https://github.com/michaelforney/swc
+# Depends on: wayland wld libdrm libevdev xorg-libpixman
+
+name=swc
+version=1.0.0
+release=1
+source=(https://github.com/michaelforney/swc/archive/44bda0166da64f16657f01d5b46cd82cc2de4493.zip)
+
+build() {
+    cd $name-44bda0166da64f16657f01d5b46cd82cc2de4493
+
+    make
+    make DESTDIR=$PKG PREFIX=/usr install
+}

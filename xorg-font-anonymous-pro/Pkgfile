@@ -1,0 +1,17 @@
+# Description: Family of four fixed-width fonts designed with coding in mind.
+# URL: http://www.marksimonson.com/fonts/view/anonymous-pro
+# Packager: mytchel at openmailbox dot org
+# Depends on: xorg-mkfontdir, xorg-mkfontscale, fontconfig
+
+name=xorg-font-anonymous-pro
+version=1.002
+release=1
+source=(http://www.marksimonson.com/assets/content/fonts/AnonymousPro-$version.zip)
+
+build() {
+	mkdir -p $PKG/usr/share/fonts
+	install -d -m 0755 $PKG/usr/share/fonts/X11/TTF
+
+	cd AnonymousPro-$version.001
+	install -m 0644 *.ttf $PKG/usr/share/fonts/X11/TTF/
+}

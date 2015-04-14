@@ -1,0 +1,16 @@
+# Description: Port of various plan9 tools for unix.
+# URL: http://tools.suckless.org/9base
+# Packager: mytchel at openmailbox dot org
+# Depends on: 
+
+name=9base
+version=6
+release=1
+source=(http://dl.suckless.org/tools/9base-$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    make
+    make DESTDIR=$PKG install
+}

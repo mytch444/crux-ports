@@ -5,8 +5,8 @@
 # Depends on: syslog
 
 name=msinit
-version=0.1
-release=3
+version=0.1.1
+release=1
 source=(https://github.com/mytch444/msinit/archive/v$version.tar.gz)
 
 build() {

@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/wld/
+-rw-r--r--	root/root	usr/include/wld/drm.h
+-rw-r--r--	root/root	usr/include/wld/pixman.h
+-rw-r--r--	root/root	usr/include/wld/wayland.h
+-rw-r--r--	root/root	usr/include/wld/wld.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libwld.a
+lrwxrwxrwx	root/root	usr/lib/libwld.so -> libwld.so.0.0
+lrwxrwxrwx	root/root	usr/lib/libwld.so.0 -> libwld.so.0.0
+-rwxr-xr-x	root/root	usr/lib/libwld.so.0.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/wld.pc

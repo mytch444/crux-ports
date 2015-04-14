@@ -1,0 +1,15 @@
+# Description: A primitve drawing library target at Wayland
+# URL: https://github.com/michaelforney/wld
+# Depends on: wayland
+
+name=wld
+version=1.0.0
+release=1
+source=(https://github.com/michaelforney/wld/archive/00ba7a7b73d3014f973fc7105d76ef35c7944b5d.zip)
+
+build() {
+    cd $name-00ba7a7b73d3014f973fc7105d76ef35c7944b5d
+
+    make
+    make DESTDIR=$PKG PREFIX=/usr install
+}
