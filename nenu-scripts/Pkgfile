@@ -6,11 +6,11 @@
 
 name=nenu-scripts
 version=3
-release=1
-source=(https://github.com/mytch444/nenu/archive/28758756f3cf0eb380464a85c0426ebfa4732028.zip)
+release=2
+source=(https://github.com/mytch444/nenu/archive/c1a2eb30de13694b5de6712805447eb1cccb5031.zip)
 
 build() {
-	cd nenu-28758756f3cf0eb380464a85c0426ebfa4732028
+	cd nenu-c1a2eb30de13694b5de6712805447eb1cccb5031
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install-scripts

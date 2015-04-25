@@ -1,4 +1,5 @@
 drwxr-xr-x	root/root	usr/
+<<<<<<< HEAD
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/wld/
 -rw-r--r--	root/root	usr/include/wld/drm.h
@@ -12,3 +13,20 @@ lrwxrwxrwx	root/root	usr/lib/libwld.so.0 -> libwld.so.0.0
 -rwxr-xr-x	root/root	usr/lib/libwld.so.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/wld.pc
+=======
+drwxr-xr-x	root/root	usr/usr/
+drwxr-xr-x	root/root	usr/usr/local/
+drwxr-xr-x	root/root	usr/usr/local/include/
+drwxr-xr-x	root/root	usr/usr/local/include/wld/
+-rw-r--r--	root/root	usr/usr/local/include/wld/drm.h
+-rw-r--r--	root/root	usr/usr/local/include/wld/pixman.h
+-rw-r--r--	root/root	usr/usr/local/include/wld/wayland.h
+-rw-r--r--	root/root	usr/usr/local/include/wld/wld.h
+drwxr-xr-x	root/root	usr/usr/local/lib/
+-rw-r--r--	root/root	usr/usr/local/lib/libwld.a
+lrwxrwxrwx	root/root	usr/usr/local/lib/libwld.so -> libwld.so.0.0
+lrwxrwxrwx	root/root	usr/usr/local/lib/libwld.so.0 -> libwld.so.0.0
+-rwxr-xr-x	root/root	usr/usr/local/lib/libwld.so.0.0
+drwxr-xr-x	root/root	usr/usr/local/lib/pkgconfig/
+-rw-r--r--	root/root	usr/usr/local/lib/pkgconfig/wld.pc
+>>>>>>> 9fae4ee25fcae11c101b87f72ca47d467c9693d0

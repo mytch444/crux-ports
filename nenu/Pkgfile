@@ -6,11 +6,11 @@
 
 name=nenu
 version=2
-release=1
-source=(https://github.com/mytch444/$name/archive/28758756f3cf0eb380464a85c0426ebfa4732028.zip)
+release=3
+source=(https://github.com/mytch444/$name/archive/dd0254b77dc28829923282d7734574101ef126d0.zip)
 
 build() {
-	cd $name-28758756f3cf0eb380464a85c0426ebfa4732028
+	cd $name-dd0254b77dc28829923282d7734574101ef126d0
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install-nenu install-man

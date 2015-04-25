@@ -9,8 +9,15 @@ release=1
 source=(http://dl.suckless.org/tools/9base-$version.tar.gz)
 
 build() {
-    cd $name-$version
+	cd $name-$version
 
-    make
-    make DESTDIR=$PKG install
+	for f in $(find . -name Makefile; find . -name "*.mk"); do
+		sed "s/man1/manp1/g" $f > tmp
+		mv tmp $f
+	done
+
+	make
+	make DESTDIR=$PKG \
+	     MANPREFIX=/usr/man \
+	     install
 }
