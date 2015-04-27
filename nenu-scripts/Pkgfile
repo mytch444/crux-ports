@@ -5,12 +5,12 @@
 # Depends on: nenu
 
 name=nenu-scripts
-version=3
-release=2
-source=(https://github.com/mytch444/nenu/archive/c1a2eb30de13694b5de6712805447eb1cccb5031.zip)
+version=4
+release=1
+source=(https://github.com/mytch444/nenu/archive/19eaf8d88bebdf5c16bcfbaf08ae277749ee48e9.zip)
 
 build() {
-	cd nenu-c1a2eb30de13694b5de6712805447eb1cccb5031
+	cd nenu-19eaf8d88bebdf5c16bcfbaf08ae277749ee48e9
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install-scripts

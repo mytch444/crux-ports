@@ -5,12 +5,12 @@
 # Depends on: xorg-server xorg-libxft xorg-libxrender freetype fontconfig lsx lsw wmutils
 
 name=nenu
-version=2
-release=3
-source=(https://github.com/mytch444/$name/archive/dd0254b77dc28829923282d7734574101ef126d0.zip)
+version=3
+release=1
+source=(https://github.com/mytch444/$name/archive/19eaf8d88bebdf5c16bcfbaf08ae277749ee48e9.zip)
 
 build() {
-	cd $name-dd0254b77dc28829923282d7734574101ef126d0
+	cd $name-19eaf8d88bebdf5c16bcfbaf08ae277749ee48e9
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install-nenu install-man
