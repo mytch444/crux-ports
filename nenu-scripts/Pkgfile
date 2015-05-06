@@ -2,15 +2,15 @@
 # URL: http://github.com/mytch444/nenu
 # Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
 # Packager: Mytchel Hammond, mytchel at openmailbox dot org
-# Depends on: nenu
+# Depends on: nenu lsw chwso lsx
 
 name=nenu-scripts
 version=4
 release=1
-source=(https://github.com/mytch444/nenu/archive/19eaf8d88bebdf5c16bcfbaf08ae277749ee48e9.zip)
+source=(https://github.com/mytch444/nenu/archive/39f046b66c54285354396e54c4e3f776939dfdb9.zip)
 
 build() {
-	cd nenu-19eaf8d88bebdf5c16bcfbaf08ae277749ee48e9
+	cd nenu-39f046b66c54285354396e54c4e3f776939dfdb9
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install-scripts

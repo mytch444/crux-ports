@@ -1,0 +1,15 @@
+# Description: List executables in a directory tree.
+# URL: http://tools.suckless.org/lsx
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+
+name=lsx
+version=0.1
+release=1
+source=(http://dl.suckless.org/tools/lsx-0.1.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}

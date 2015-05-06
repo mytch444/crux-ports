@@ -1,0 +1,17 @@
+# Description: Utility to raise/lower windows.
+# URL: http://github.com/mytch444/chwso
+# Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: xorg-server
+
+name=chwso
+version=1
+release=1
+source=(https://github.com/mytch444/chwso/archive/cd37d54e5f9b59c03bf6151416b2d128a1fbd73f.zip)
+
+build() {
+	cd $name-cd37d54e5f9b59c03bf6151416b2d128a1fbd73f
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+}

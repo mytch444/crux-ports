@@ -1,0 +1,16 @@
+# Description: Print mapped windows and their titles.
+# URL: http://tools.suckless.org/lsw
+# Packager: Mytchel Hammond, mytchel at openmailbox dot org
+# Depends on: xorg-server
+
+name=lsw
+version=0.3
+release=1
+source=(http://dl.suckless.org/tools/lsw-0.3.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}

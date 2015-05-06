@@ -2,15 +2,15 @@
 # URL: http://github.com/mytch444/nenu
 # Maintainer: Mytchel Hammond, mytchel at openmailbox dot org
 # Packager: Mytchel Hammond, mytchel at openmailbox dot org
-# Depends on: xorg-server xorg-libxft xorg-libxrender freetype fontconfig lsx lsw wmutils
+# Depends on: xorg-server xorg-libxft xorg-libxrender freetype fontconfig
 
 name=nenu
-version=3
+version=4
 release=2
-source=(https://github.com/mytch444/$name/archive/1db9b618ce31a21d24d0a71d3f4f33ec4027e26d.zip)
+source=(https://github.com/mytch444/$name/archive/39f046b66c54285354396e54c4e3f776939dfdb9.zip)
 
 build() {
-	cd $name-1db9b618ce31a21d24d0a71d3f4f33ec4027e26d
+	cd $name-39f046b66c54285354396e54c4e3f776939dfdb9
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install-nenu install-man
