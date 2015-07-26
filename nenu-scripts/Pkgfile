@@ -5,12 +5,12 @@
 # Depends on: nenu lsw chwso lsx
 
 name=nenu-scripts
-version=4
+version=5
 release=1
-source=(https://github.com/mytch444/nenu/archive/39f046b66c54285354396e54c4e3f776939dfdb9.zip)
+source=(https://github.com/mytch444/nenu/archive/ec0d33fcab1f89af09693443b7930f66045f5928.zip)
 
 build() {
-	cd nenu-39f046b66c54285354396e54c4e3f776939dfdb9
+	cd nenu-ec0d33fcab1f89af09693443b7930f66045f5928
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install-scripts

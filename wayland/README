@@ -1,3 +1,0 @@
-You will need mesa3d with 
-	--with-egl-platforms=x11,wayland,drm
-or install mesa3d from my repository.

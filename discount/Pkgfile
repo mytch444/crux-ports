@@ -1,0 +1,19 @@
+# Description: Implementation of Markdown in C.
+# URL: http://www.pell.portland.or.us/~orc/Code/discount/
+# Packager: mytchel at openmailbox dot org
+# Depends on: 
+
+name=discount
+version=2.1.8a
+release=1
+source=(http://www.pell.portland.or.us/~orc/Code/discount/discount-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure.sh \
+		--prefix=/usr \
+		--mandir=/usr/man
+	make
+	make DESTDIR=$PKG install
+}

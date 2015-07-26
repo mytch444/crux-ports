@@ -5,12 +5,12 @@
 # Depends on: xorg-server
 
 name=dpmstimeout
-version=2
-release=2
-source=(https://github.com/mytch444/dpmstimeout/archive/2e607302fb80c195553ecbf71e9044eaf41feedd.zip)
+version=3
+release=1
+source=(https://github.com/mytch444/dpmstimeout/archive/aec88343bc025f1ec365046dce1f6eb41e3f1887.zip)
 
 build() {
-	cd $name-2e607302fb80c195553ecbf71e9044eaf41feedd
+	cd $name-aec88343bc025f1ec365046dce1f6eb41e3f1887
 
 	make
 	make DESTDIR=$PKG install

@@ -5,12 +5,12 @@
 # Depends on: xorg-server xorg-libxft xorg-libxrender freetype fontconfig
 
 name=nenu
-version=4
-release=2
-source=(https://github.com/mytch444/$name/archive/39f046b66c54285354396e54c4e3f776939dfdb9.zip)
+version=5
+release=1
+source=(https://github.com/mytch444/nenu/archive/ec0d33fcab1f89af09693443b7930f66045f5928.zip)
 
 build() {
-	cd $name-39f046b66c54285354396e54c4e3f776939dfdb9
+	cd $name-ec0d33fcab1f89af09693443b7930f66045f5928
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install-nenu install-man
