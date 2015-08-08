@@ -1,0 +1,21 @@
+# Description: tool to make bootable usb disks
+# URL: http://freecode.com/projects/makebootfat/
+# Mantainer: F. Kiroles, u7knv9h at openmailbox dot org
+# Depends on: glibc
+
+name=makebootfat
+version=1.4
+release=1
+source=(http://downloads.sourceforge.net/project/advancemame/advanceboot/1.4/$name-$version.tar.gz)
+
+build() {
+
+	cd $name-$version
+
+	./configure	--prefix=/usr \
+			--mandir=/usr/man
+
+	make
+	make DESTDIR=$PKG install
+
+}

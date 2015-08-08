@@ -1,0 +1,15 @@
+# Description: Password manager that follows the Unix philosophy
+# URL: http://www.passwordstore.org/
+# Packager: mytchel at openmailbox dot org
+# Depends on: gpg
+
+name=password-store
+version=1.6.5
+release=1
+source=(http://git.zx2c4.com/password-store/snapshot/password-store-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	make DESTDIR=$PKG MANDIR=/usr/man install
+}
